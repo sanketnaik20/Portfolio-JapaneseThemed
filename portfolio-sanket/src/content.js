@@ -4,7 +4,7 @@ export const content = {
     tagline: "Building Scalable Systems",
     role: "Final-year IT Student | Backend Developer",
     summary: "Passionate about building scalable systems and continuously learning new technologies. Experience in Spring Boot, React, and AI integration.",
-    email: "sanketnaik2004@gmail.com",
+    email: "sanketnaikmail@gmail.com",
     phone: "9*******2",
     linkedin: "https://linkedin.com/in/sanketnaik20",
     github: "https://github.com/sanketnaik20",
