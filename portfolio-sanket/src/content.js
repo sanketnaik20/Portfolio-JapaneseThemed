@@ -1,7 +1,7 @@
 export const content = {
   profile: {
     name: "Sanket Naik",
-    tagline: "Building Scalable Systems with Zen Precision",
+    tagline: "Building Scalable Systems",
     role: "Final-year IT Student | Backend Developer",
     summary: "Passionate about building scalable systems and continuously learning new technologies. Experience in Spring Boot, React, and AI integration.",
     email: "sanketnaik2004@gmail.com",
@@ -24,11 +24,12 @@ export const content = {
     }
   ],
   skills: {
-    languages: ["Java", "C", "C++"],
-    backend: ["Spring Boot", "REST APIs", "Maven"],
-    frontend: ["ReactJS", "JavaScript", "HTML/CSS", "JWT"],
-    database: ["MySQL", "MongoDB", "Workbench"],
-    tools: ["Git", "GitHub", "VS Code"]
+    languages: ["Java", "C", "C++","Python","JavaScript"],
+    backend: ["Spring Boot", "REST APIs", "Maven","NodeJS","ExpressJS","JWT"],
+    frontend: ["ReactJS", "JavaScript", "HTML/CSS"],
+    database: ["MySQL", "MongoDB", "MySQL Workbench"],
+    tools: ["Git", "GitHub", "VS Code","Postman","IntelliJ IDEA","Google Colab"],
+    AIML:["Transformer Architectures", "Natural Language Processing", "Computer Vision"]
   },
   internship: {
     company: "Persistent Systems Limited",
@@ -48,17 +49,47 @@ export const content = {
       title: "URL Shortener",
       tech: ["Spring Boot", "Java", "REST API"],
       description: "API to shorten URLs with custom slugs, redirection tracking, and expiration logic.",
-      link: "https://github.com/sanketnaik20/url-shortener-sb"
+      link: "https://github.com/sanketnaik20/url-shortener-sb",
+      status:"Completed"
     },
     {
       title: "Real-Time Chat App",
       tech: ["Spring Boot", "WebSockets", "STOMP"],
       description: "Real-time messaging supporting multiple concurrent sessions.",
-      link: "https://github.com/sanketnaik20/app"
+      link: "https://github.com/sanketnaik20/app",
+        status:"Completed"
+    },
+    {
+        title: "Smart School with Video Intelligence",
+        tech: ["Python", "OpenCV", "Machine Learning"],
+        description: "Developed a system to monitor classroom attention using video analytics.",
+        link: "https://github.com/sanketnaik20/app"
+,        status:"Completed"
+    },
+     {
+       title:"Movie Ticket Booking System",
+         tech:["Java","Spring","MySQL"],
+         description:"Desktop application for booking movie tickets with seat selection and payment simulation.",
+         link:"https://github.com/sanketnaik20/MovieTicketDBMS"
+,        status:"Completed"
+    },
+     {
+      title:"Job Portal Website",
+      tech:["Spring Boot","ReactJS","MySQL"],
+      description:"Full-stack job portal with user authentication, job listings, and application tracking.",
+      link:"https://github.com/sanketnaik20/JobPortal",
+        status:"Completed"
+    },
+    {
+        title: "Document Classification of Low-resource Konkani Language Using Transformer Architectures",
+        tech: ["Python", "Transformers", "NLP"],
+        description: "Implementing BERT and DistilBERT models for classifying Konkani text documents, achieving high accuracy despite limited data.This is Also My Final Year Project.",
+        link: "https://github.com/sanketnaik20/app",
+        status:"Ongoing"
     }
   ],
   achievements: [
-    { title: "Runners-up - Aavishkar 2025 Hackathon", desc: "Smart Schools with Video Intelligence" },
+    { title: "Runners-up - Aavishkar 2025 Hackathon ", desc: "Smart Schools with Video Intelligence" },
     { title: "Winners - Tech Twister 2024", desc: "Chakravyuh Event" },
     { title: "3rd Place - Techyon 2023", desc: "Code Test" }
   ]
