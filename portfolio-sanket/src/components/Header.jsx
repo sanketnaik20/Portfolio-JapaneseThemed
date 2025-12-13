@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/global.css';
+import { content } from '../content';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +11,7 @@ const Header = () => {
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Resume', href: content.profile.resume, isExternal: true },
   ];
 
   return (
@@ -31,7 +33,13 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="desktop-nav" style={{ display: 'flex', gap: '2rem' }}>
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} style={{ fontSize: '0.95rem', letterSpacing: '0.05em' }}>
+            <a 
+              key={link.name} 
+              href={link.href} 
+              target={link.isExternal ? "_blank" : "_self"}
+              rel={link.isExternal ? "noopener noreferrer" : ""}
+              style={{ fontSize: '0.95rem', letterSpacing: '0.05em' }}
+            >
               {link.name}
             </a>
           ))}

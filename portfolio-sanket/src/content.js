@@ -1,13 +1,14 @@
 export const content = {
   profile: {
     name: "Sanket Naik",
-    tagline: "Building Scalable Systems",
+    tagline: "Backend Developer | Scaling Ideas into Reality",
     role: "Final-year IT Student | Backend Developer",
     summary: "Passionate about building scalable systems and continuously learning new technologies. Experience in Spring Boot, React, and AI integration.",
     email: "sanketnaikmail@gmail.com",
     phone: "9*******2",
     linkedin: "https://linkedin.com/in/sanketnaik20",
     github: "https://github.com/sanketnaik20",
+    resume: "/Sanket-Naik.pdf", // Placeholder: Replace with actual file path or URL
   },
   education: [
     {

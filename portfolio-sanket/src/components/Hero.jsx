@@ -19,7 +19,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <p style={{ color: 'var(--crimson)', fontWeight: 'bold', letterSpacing: '0.1em', marginBottom: '1rem' }}>
-            KONNICHIWA, I AM
+            NAMASTE, I AM
           </p>
           <h1 style={{ fontSize: 'clamp(3rem, 5vw, 4.5rem)', lineHeight: 1.1, marginBottom: '1.5rem' }}>
             {content.profile.name}
@@ -27,9 +27,12 @@ const Hero = () => {
           <h2 style={{ fontSize: '1.25rem', fontFamily: 'var(--font-body)', color: 'var(--muted-gray)', marginBottom: '2rem' }}>
             {content.profile.tagline}
           </h2>
-          <div style={{ display: 'flex', gap: '1rem' }}>
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <a href="#projects" className="btn btn-primary">View Work</a>
             <a href="#contact" className="btn">Contact Me</a>
+            <a href={content.profile.resume} target="_blank" rel="noopener noreferrer" className="btn" style={{ border: '1px solid var(--crimson)', color: 'var(--crimson)' }}>
+              Resume
+            </a>
           </div>
         </motion.div>
 

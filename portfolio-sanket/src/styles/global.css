@@ -33,6 +33,7 @@ a {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 20px;
+  contain: content; /* Performance: Helps browser skip rendering off-screen content */
 }
 
 /* Utilities */
@@ -66,4 +67,116 @@ a {
 .btn-primary:hover {
   background: var(--koi-orange);
   border-color: var(--koi-orange);
+}
+
+/* --- New Japanese Aesthetic Styles --- */
+
+/* 1. Vertical Text (Tategaki) */
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  /* transform: rotate(180deg); Removed to fix layout/clipping issues */
+  font-family: var(--font-heading);
+  letter-spacing: 0.2em;
+  border-right: 4px solid var(--crimson); /* Default to right border for Left-aligned headers */
+  padding-right: 1rem;
+  height: fit-content;
+  /* max-height: 300px; Removed to allow line to stretch if needed */
+  text-align: center;
+}
+
+/* 2. Shoji Screen Card */
+.shoji-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 4px solid #dcd6ce; /* Wood color */
+  position: relative;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother bezier curve */
+  box-shadow: var(--shoji-shadow);
+  will-change: transform; /* Hint browser to promote layer */
+  transform: translateZ(0); /* Force GPU acceleration */
+}
+
+/* Inner grid lines for Shoji effect */
+.shoji-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 33%;
+  width: 1px;
+  height: 100%;
+  background: rgba(220, 214, 206, 0.3);
+  pointer-events: none;
+  z-index: 0;
+}
+.shoji-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 66%;
+  width: 1px;
+  height: 100%;
+  background: rgba(220, 214, 206, 0.3);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.shoji-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--crimson);
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.1);
+}
+
+/* 3. Ink Wash (Sumi-e) Hover Effect */
+.ink-brush {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.ink-brush::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--sumi-ink);
+  z-index: -1;
+  transition: left 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  opacity: 0.1;
+  transform: skewX(-20deg);
+}
+
+.ink-brush:hover::before {
+  left: 0;
+}
+
+/* 4. Hanko Stamp */
+.hanko-stamp {
+  width: 90px;
+  height: 90px;
+  border: 4px solid var(--crimson);
+  border-radius: 50%;
+  color: var(--crimson);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1rem;
+  margin: 0 auto;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background: rgba(183, 28, 28, 0.05);
+  transform: rotate(-12deg);
+  box-shadow: 0 0 0 4px rgba(251, 247, 240, 1) inset; /* Double ring effect */
+}
+
+.hanko-stamp:hover {
+  transform: scale(1.1) rotate(0deg);
 }
