@@ -8,7 +8,7 @@ const Projects = () => {
       <div style={{ display: 'flex', gap: '2rem',marginTop:'2rem' }}>
         {/* Vertical Header */}
         <div className="vertical-text" style={{ flexShrink: 0 }}>
-          <h2 style={{ margin: 0, fontSize: '2.5rem' }}>PROJECTS</h2>
+          <h2 style={{ margin: 0, fontSize: '2rem', lineHeight: '1.2' }}>PROJECTS</h2>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', flexGrow: 1 }}>

@@ -8,7 +8,7 @@ const Contact = () => {
       <div style={{ display: 'flex', gap: '2rem' }}>
         {/* Vertical Header */}
         <div className="vertical-text" style={{ flexShrink: 0 }}>
-          <h2 style={{ margin: 0, fontSize: '2.5rem' }}>CONTACT</h2>
+          <h2 style={{ margin: 0, fontSize: '2rem', lineHeight: '1.2' }}>CONTACT</h2>
         </div>
 
         <div className="shoji-card" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '3rem' }}>

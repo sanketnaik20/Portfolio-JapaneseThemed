@@ -5,19 +5,15 @@ const Experience = () => {
   const { internship } = content;
   return (
     <section id="experience" className="container">
-        <div style={{ display: 'flex', gap: '2rem' }}>
+        <div style={{ display: 'flex', gap: '2rem',paddingTop:'2rem' }}>
             <div className="vertical-text" style={{ flexShrink: 0 }}>
-                <h2 style={{ margin: 0, fontSize: '2.5rem' }}>EXPERIENCE</h2>
+                <h2 style={{ margin: 0, fontSize: '2rem', lineHeight: '1.2' }}>EXPERIENCE</h2>
             </div>
             
-            <div style={{ 
-                background: '#fff', 
-                padding: '2rem', 
-                borderLeft: '4px solid var(--indigo)',
-                boxShadow: 'var(--shoji-shadow)',
+            <div className="shoji-card" style={{ 
+                flexGrow: 1,
                 position: 'relative',
-                overflow: 'hidden',
-                flexGrow: 1
+                overflow: 'hidden'
             }}>
                 {/* Background pattern hint */}
                 <div style={{ position: 'absolute', right: '-20px', top: '-20px', fontSize: '10rem', opacity: 0.03, pointerEvents: 'none' }}>

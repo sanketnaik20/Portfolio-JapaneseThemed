@@ -7,7 +7,7 @@ const Skills = () => {
        <div style={{ display: 'flex', flexDirection: 'row-reverse', gap: '2rem',paddingTop:'2rem' }}>
           {/* Vertical Header - Right Aligned */}
           <div className="vertical-text" style={{ flexShrink: 0, borderRight: 'none', borderLeft: '4px solid var(--crimson)', paddingRight: 0, paddingLeft: '1rem' }}>
-            <h2 style={{ margin: 0, fontSize: '2.5rem' }}>SKILLS</h2>
+            <h2 style={{ margin: 0, fontSize: '2rem', lineHeight: '1.2' }}>SKILLS</h2>
           </div>
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', flexGrow: 1 }}>
